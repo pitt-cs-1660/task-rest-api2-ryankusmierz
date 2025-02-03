@@ -153,6 +153,6 @@ async def delete_task(task_id: int):
     db_conn.commit()
     db_conn.close()
 
-    return {"message": "Task was deleted successfully"}
+    return {"message": "Task {task_id} deleted successfully"}
 
     # raise HTTPException(status_code=status.HTTP_501_NOT_IMPLEMENTED, detail="Not implemented")
